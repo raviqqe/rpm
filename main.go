@@ -30,15 +30,11 @@ func main() {
 	fmt.Println(r.Report())
 
 	if s := e.Report(); s != "" {
-		printStderr(color.RedString(s))
+		fail(color.RedString(s))
 	}
 }
 
-func printStderr(s string) {
-	fmt.Fprintln(os.Stderr, s)
-}
-
 func fail(s string) {
-	printStderr(s)
+	fmt.Fprintln(os.Stderr, s)
 	os.Exit(1)
 }
