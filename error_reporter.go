@@ -53,7 +53,7 @@ func (r *errorReporter) Report() string {
 	ss := make([]string, 0, len(r.counts))
 
 	for s, i := range r.counts {
-		ss = append(ss, fmt.Sprintf("%v\t%v", s, i))
+		ss = append(ss, fmt.Sprintf("%v\t(%v times)", s, i))
 	}
 
 	return strings.Join(ss, "\n")
