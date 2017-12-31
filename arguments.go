@@ -7,10 +7,10 @@ import (
 )
 
 func getArguments() (map[string]interface{}, error) {
-	const usage = `ba, the ab alternative
+	const usage = `rpm, the RPM reporter
 
 Usage:
-	ba [-n <number>] [-c <number>] [-h] <url>
+	rpm [-n <number>] [-c <number>] [-h] <url>
 
 Options:
 	-n <number>  Number of total requests. [default: 10000]
