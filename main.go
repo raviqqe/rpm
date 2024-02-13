@@ -2,11 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"os"
 
 	"github.com/fatih/color"
-	"github.com/valyala/fasthttp"
 )
 
 func main() {
