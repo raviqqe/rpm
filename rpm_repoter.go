@@ -37,7 +37,7 @@ func (r *rpmReporter) Analyze() {
 		r.count++
 	}
 
-	r.minutes = time.Now().Sub(t).Minutes()
+	r.minutes = time.Since(t).Minutes()
 
 	r.waitGroup.Done()
 }

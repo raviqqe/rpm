@@ -17,7 +17,7 @@ Options:
 	-c <number>  Number of concurrent requests. [default: 1000]
 	-h           Show this help.`
 
-	args, err := docopt.Parse(usage, nil, true, "", false)
+	args, err := docopt.ParseDoc(usage)
 
 	if err != nil {
 		return nil, err

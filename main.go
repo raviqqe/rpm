@@ -2,14 +2,10 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"os"
 
 	"github.com/fatih/color"
-	"github.com/valyala/fasthttp"
 )
-
-var http = fasthttp.Client{MaxConnsPerHost: math.MaxInt32}
 
 func main() {
 	args, err := getArguments()
