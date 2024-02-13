@@ -9,8 +9,6 @@ import (
 	"github.com/valyala/fasthttp"
 )
 
-var http = fasthttp.Client{MaxConnsPerHost: math.MaxInt32}
-
 func main() {
 	args, err := getArguments()
 
