@@ -15,7 +15,7 @@ jobs:
       - run: go build
       - uses: golangci/golangci-lint-action@e7fa5ac41e1cf5b7d48e45e42232ce7ada589601 # v9.1.0
       - run: go test -race -covermode atomic -coverprofile coverage.txt
-      - uses: codecov/codecov-action@671740ac38dd9b0130fbe1cec585b89eea48d3de # v5.5.2
+      - uses: codecov/codecov-action@1af58845a975a7985b0beb0cbe6fbbb71a41dbad # v5.5.3
   spell_check:
     runs-on: ubuntu-latest
     steps:
